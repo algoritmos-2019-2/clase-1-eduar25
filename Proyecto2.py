@@ -77,9 +77,9 @@ for y in range(u):
 		T.append(y)
 print(f"{T}")
 for w in range(len(T)): 
-	if T[w]-T[w-1] == 1:
+	if T[w]-T[w-1] == 2:
 		continue 
-	elif T[w]-T[w-1] != 1:
+	elif T[w]-T[w-1] != 2:
 		T.remove(w)           
 print(f"{T}")  
 
