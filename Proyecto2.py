@@ -80,6 +80,7 @@ for w in range(len(T)):
 	if T[w]-T[w-1] == 2:
 		continue 
 	elif T[w]-T[w-1] != 2:
-		T.remove(w)           
+		break 	
+		           
 print(f"{T}")  
 
