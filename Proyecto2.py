@@ -48,3 +48,38 @@ for i in range(r):
 				a=a+1  
 	if b == 1: 
 		print(i)
+
+
+print("Generación de una tupla con los primos gemelos menores a un número dado")
+print("Inserte un número hasta el cual desea generar los primos gemelos menores") 
+u=int(input())
+w=0 
+T = []  
+for y in range(u):
+	a=2
+	b=2
+	if y==0:
+		b=0
+	elif y==1:
+		b=0
+	elif y==2:
+		b=1
+	elif y>2:
+		while a <= (y-1):
+			primoss=y%a
+			if primoss == 0:
+				b=0
+				a=y
+			elif primoss != 0:
+				b=1 
+				a=a+1
+	if b == 1:
+		T.append(y)
+print(f"{T}")
+for w in range(len(T)): 
+	if T[w]-T[w-1] == 1:
+		continue 
+	elif T[w]-T[w-1] != 1:
+		T.remove(w)           
+print(f"{T}")  
+
